@@ -9,11 +9,11 @@ export default function Featured() {
     <section className="featured-section" data-scroll-section>
       <div className="featured-row-layout">
         <h6>developer and film photographer</h6>
-        <img src={developer} alt="developer" />
+        <img src={developer} alt="developer" data-scroll />
       </div>
       <div className="featured-column-layout">
         <h6>madeleine enberg</h6>
-        <img src={photographer} alt="photographer" />
+        <img src={photographer} alt="photographer" data-scroll />
       </div>
     </section>
   );
