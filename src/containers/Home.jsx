@@ -6,11 +6,14 @@ import Featured from "../components/Featured";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
+import useLocoScroll from "../hooks/useLocoScroll";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = useState(3);
   const id = useRef(null);
+
+  useLocoScroll(!preloader);
 
   const clear = () => {
     window.clearInterval(id.current);
